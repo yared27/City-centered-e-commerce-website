@@ -1,0 +1,90 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username']) || $_SESSION['Security_Key'] != 'System manager') {
+  // The user is not logged in as a system manager
+  header("Location: ../adminlogin.php");
+  exit;
+}
+
+// The user is logged in as a system manager
+echo "Welcome, " . $_SESSION['username'] . "! You are logged in as a " . $_SESSION['Security_Key'] . ".";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>40Gebeya</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/Welcome.css">
+  <link rel="stylesheet" href="css/adminsys.css">
+</head>
+<header>
+  <nav>
+    <a href="">Home</a>
+    <a href="">Contacts</a>
+    <a href="">Info</a>
+    <div class="logo">
+    <a href="index.html" ><img src="image/logo.jpg" alt="logo" width="75px"></a>
+</div>
+  </nav>
+  <div class="switch">
+    <input
+      id="language-toggle"
+      class="check-toggle check-toggle-round-flat"
+      type="checkbox"
+    />
+    <label for="language-toggle"></label>
+    <span class="on">EN</span>
+    <span class="off">አማ</span>
+  </div>
+</header>
+<body style="margin: 0; background-color: #000; color: #eee; font-family: Poppins; font-size: 12px; background-image: url(image/background.jpg); background-repeat: no-repeat; background-size: cover;"
+>
+    
+    
+
+
+  <div id="english-content" class="all-cont">
+ <div class="selector-cont">
+    
+      
+      <!-- Button for USER -->
+<a href="#" class="button"><span>USER</span></a>
+
+<!-- Button for SELLER -->
+<a href="#" class="button"><span>SELLER</span></a>
+
+<!-- Button for SHIPPING -->
+<a href="#" class="button"><span>SHIPPING</span></a>
+
+<!-- Button for CATEGORIES -->
+<a href="#" class="button"><span>CATEGORIES</span></a>
+
+<!-- Button for PAYMENT SYSTEMS -->
+<a href="#" class="button"><span>PAYMENT SYSTEMS</span></a>
+
+<!-- Button for WEBSITE PERFORMANCE -->
+<a href="#" class="button"><span>WEBSITE PERFORMANCE</span></a>
+
+<!-- Button for VIEW SITE -->
+<a href="#" class="button"><span>VIEW SITE</span></a>
+
+    
+  </div>
+  <div class="select-previewer">
+    <div class="search-cont"></div>
+  </div>
+</div>
+<br>
+
+
+
+
+
+
+</body>
+<script type="text/JavaScript" src="lang-about.js"></script>
+</html>

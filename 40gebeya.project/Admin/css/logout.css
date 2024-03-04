@@ -1,0 +1,45 @@
+.logout-message
+{
+
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 0%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+}
+.name-info-submit{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    border-radius: 15px;
+    font-size: 2dvb;
+    border: none;
+    margin: 50px;
+}
+.name-info-submit:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    border-radius: 15px;
+    font-size: 2dvb;
+    border: none;
+    margin: 50px;
+}
+.name-info-submit a{
+text-decoration: none;
+color: rgba(255, 255, 255, 1);
+text-shadow: 1px 1px #000;;
+}
+
+h1{
+    font-size: 6dvb;
+    text-transform: uppercase;
+    font-family: cursive;
+    text-shadow:4px 4px #352d2def; 
+}
+.logout-message img{
+    width: 70%;
+    clip: rect(0px,60px,200px,0px);
+    
+}

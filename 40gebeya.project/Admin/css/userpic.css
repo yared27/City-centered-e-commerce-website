@@ -1,0 +1,24 @@
+.userpfp{
+    border-radius: 50dvb;
+    height: 30dvb;
+    width: 30dvb;
+}
+
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  
+  input[type="submit"] {
+    display: block;
+    width: fit-content;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #007B9A;
+  }

@@ -1,0 +1,23 @@
+.middle
+{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    display:flex ;
+    flex-direction: row;
+    height: 30%;
+}
+.customer-signup ,.seller-signup{
+  font-family: cursive;
+  text-transform: capitalize;
+  font-size: 3dvb; 
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; 
+  padding: 25px;
+}
+.seller-signup{
+    
+font-size: 3dvb;
+}
+    
